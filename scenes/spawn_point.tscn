@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dkat5d5qburgc"]
+
+[ext_resource type="Script" uid="uid://5l17paret3oc" path="res://scripts/spawn_point.gd" id="1_c3ytd"]
+[ext_resource type="Texture2D" uid="uid://8w3nvcqnqy0g" path="res://icon.svg" id="2_v26hd"]
+
+[node name="SpawnPoint" type="Node2D"]
+script = ExtResource("1_c3ytd")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 8.0
+autostart = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.777988, 0.600777, 0.919472, 1)
+scale = Vector2(0.421875, 0.359375)
+texture = ExtResource("2_v26hd")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

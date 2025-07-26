@@ -1,0 +1,12 @@
+{
+	"max_health" : 100
+	"max_shield" : 100
+	"shield_regen_flat" : 1
+	"shield_regen_multiplier" : 0.1
+	"attack_damage" : 1
+	"rotation" : 0.01
+	"speed" : 200
+	"boost_speed" : 300
+	"bullet_speed" : 300
+	"bullet_size" : 1
+}
